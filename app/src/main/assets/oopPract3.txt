@@ -1,0 +1,66 @@
+#include<iostream>
+using namespace std;
+class CppArray
+{
+  public:
+	int a[100],b[100],n;
+	void get()
+	{
+		cout<<"\nHow many elements you want to enter-->";
+		cin>>n;
+		cout<<"\nEnter elements of array ->\n";
+		for(int i=0;i<n;i++)
+			cin>>a[i];
+	}
+    void disps()
+	{
+		cout<<"\nElements of array one and array two are -->\n";
+		for(int i=0;i<n;i++)
+			cout<<"\n"<<a[i];
+    }
+    void disp()
+	{
+		cout<<"\nElements of array one and array two are -->\n";
+		for(int i=0;i<n;i++)
+			cout<<"\n"<<a[i]<<"\t"<<b[i];
+	}
+	void range()
+	{
+		int m=n-1;
+		cout<<"\nRange of array 1 is = 0 - "<<m;
+	}
+	int temp;
+	void sort()
+	{
+		for(int i=0;i<n;i++)
+		{
+			for(int j=0;j<n-1;j++)
+			{
+				if(a[j]>a[j+1])
+				{
+					temp=a[j+1];
+					a[j+1]=a[j];
+					a[j]=temp;
+				}
+			}
+		}
+	}
+	void swap()
+	{
+		for(int i=0;i<n;i++)
+		{
+			b[i]=a[i];
+		}
+	}
+};
+int main()
+{
+	CppArray obj;
+	obj.get();
+	obj.disps();
+	obj.sort();
+	obj.swap();
+	obj.range();
+	obj.disp();
+	return 0;
+}

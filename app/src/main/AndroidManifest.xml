@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="niks.doubtblast.com">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Main activity -->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Chat_Room"/>
+        <activity android:name=".OOP"/>
+        <activity android:name=".oop_pract"/>
+        <activity android:name=".DSA"/>
+        <activity android:name=".dsa_pract"/>
+        <activity android:name=".CompDoubts"/>
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <!-- This service is only used on devices with API v17+ -->
+
+        <activity android:name=".oop1"/>
+        <activity android:name=".oop2"/>
+        <activity android:name=".oop3"/>
+        <activity android:name=".oop4"/>
+        <activity android:name=".oop5"/>
+        <activity android:name=".oop6"/>
+        <activity android:name=".oop7"/>
+        <activity android:name=".oop8"/>
+        <activity android:name=".oop9"/>
+        <activity android:name=".oop10"/>
+        <activity android:name=".oop11"/>
+        <activity android:name=".oop12"/>
+        <activity android:name=".AccountActivity">
+        </activity>
+        <activity android:name=".Profile">
+        </activity>
+        <activity android:name=".signIn">
+        </activity>
+       <activity android:name=".cDoubt">
+        </activity>
+        <activity android:name=".dDoubt">
+        </activity>
+        <activity android:name=".eDoubt">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,51 @@
+#include<iostream>
+using namespace std;
+class Complex
+{
+    public:
+        friend ostream operator<<(ostream &print,Complex &obj)
+        {
+            print<<obj.a<<" + "<<obj.b<<"i\n\n";
+            return print;
+        }
+        friend istream operator>>(istream &read,Complex &obj)
+        {
+            read>>obj.a;
+            read>>obj.b;
+            return print;
+        }
+        Complex operator+(const Complex &s)
+        {
+            Complex add;
+            add.a=this->a+s.a;
+            add.b=this->b+s.b;
+            return add;
+        }
+        Complex operator*(const Complex &m)
+        {
+            Complex mul;
+            mul.a=(this->a*m.a)-(this->b*m.b);
+            mul.b=(this->b*m.a)+(this->a*m.b);
+            return mul;
+        }
+        int a;
+        int b;
+};
+
+int main()
+{
+    Complex num1;
+    Complex num2;
+    Complex add;
+    Complex mul;
+
+    cout<<"\nEnter a and b in form (a+bi)-->";
+    cin>>num1;
+    cout<<"\nEnter a and b in form (a+bi)-->";
+    cin>>num2;
+    add=num1+num2;
+    cout<<add;
+    mul=num1*num2;
+    cout<<mul;
+    return 0;
+}

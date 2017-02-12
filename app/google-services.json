@@ -1,0 +1,50 @@
+{
+  "project_info": {
+    "project_number": "754927462127",
+    "firebase_url": "https://doubt-blast-2ed2b.firebaseio.com",
+    "project_id": "doubt-blast-2ed2b",
+    "storage_bucket": "doubt-blast-2ed2b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754927462127:android:652a7c54cc254f06",
+        "android_client_info": {
+          "package_name": "niks.doubtblast.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "754927462127-an31eumir5vi77346pblabfvc2p08qe6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "niks.doubtblast.com",
+            "certificate_hash": "6AB8F1BB4F99831C9EDED329B5D9EBB3CCE6B398"
+          }
+        },
+        {
+          "client_id": "754927462127-2edopq0evbfun3rsbncqaraq1spchv2m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCC_0-KVa1jtItm7gvdjR9uv1zM1NZJOc0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

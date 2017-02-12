@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="200dp"
+    android:background="@drawable/img"
+    android:weightSum="1"
+    android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:paddingTop="20dp"
+        android:src="@drawable/ic_laun"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.12" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="DOUBT BLAST"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.12" />
+
+    <TextView
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=" © NIKS"
+        android:textAlignment="center"
+        android:id="@+id/textView2"
+        android:layout_weight="0.06"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">Doubt Blast</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu1">Our Team</string>
+    <string name="title_activity_doubts1">Doubts</string>
+    <string name="title_activity_comp_sub">Comp. Subjects</string>
+
+    <string name="t1"> 01. Introduction to C++</string>
+    <string name="t2"> 02. Array</string>
+    <string name="t3"> 03. Control Structure</string>
+    <string name="t4"> 04. Functions</string>
+    <string name="t5"> 05. Class</string>
+    <string name="t6"> 06. Access Specifier</string>
+    <string name="t7"> 07. Constructor and Destructor</string>
+    <string name="t8"> 08. Pointer</string>
+    <string name="t9"> 09. Inheritance</string>
+    <string name="t10"> 10. Polymorphism</string>
+    <string name="t11"> 11. Dynamic Memory Allocation</string>
+    <string name="t12"> 12. Linked List</string>
+    <string name="t13"> 13. Stack</string>
+    <string name="t14"> 14. Type Conversion(Explicit and Implicit)</string>
+    <string name="t15"> 15. Template</string>
+    <string name="t16"> 16. Exception Handling</string>
+    <string name="t17"> 17. Structure</string>
+    <string name="t18"> 18. Union</string>
+
+
+    <string name="oop1"> 01. Complex number ( a + bi )</string>
+    <string name="oop2"> 02. Quadratic Polynomial</string>
+    <string name="oop3"> 03. CppArray array handling</string>
+    <string name="oop4"> 04. Calculator</string>
+    <string name="oop5"> 05. Student Database</string>
+    <string name="oop6"> 06. Class Template</string>
+    <string name="oop7"> 07. Rational Numbers</string>
+    <string name="oop8"> 08. Publishing Company</string>
+    <string name="oop9"> 09. STORY.TXT line counting</string>
+    <string name="oop10"> 10. Conversion</string>
+    <string name="oop11"> 11. Book shop</string>
+    <string name="oop12"> 12. Employee bio-data</string>
+
+
+    <string name="op1"> Implement a class Complex which represents the Complex Number data type.
+        \nImplements the following operations :-
+        \n1) Constructor (including a default constructor )which creates the complex number ( 0 + 0i ).
+        \n2) Overloaded operator+ to add two complex numbers.
+        \n3) Overloaded operator* to multiply two complex numbers.
+        \n4) Overloaded Insertion and Extraction operator to print and read complex numbers.\n</string>
+    <string name="op2"> Implement a class quadratic that represents degree two polynomials i.e. polynomial of type ax^2 + bx +c. The class will require three data members corresponding to a, b and c.
+        \n Implement the following operations:
+        \n 1) A constructor (including a default constructor which creates the 0 polynomial ).
+        \n 2) Overloaded operator_ to add two polynomials of degree 2.
+        \n 3) Overloaded Insertion and Extraction operator to print and read polynomials. to do this , you will need to decide what you want   your input and output format to look like.
+        \n 4) A function eval that computes the value of a polynomial for a given value of x.
+    	\n 5) A function that computes the two solutions of the equation ax^2 + bx + c = 0.\n</string>
+    <string name="op3"> Implement a class CppArray which is identical to a one-dimensional C++ array (i.e., the index set is a set of consecutive integers starting at 0) except for the following : 
+        \n 1. It performs range checking.
+        \n 2. It allows one to be assigned to another array through the use of the assignment operator (e.g. cp1= cp2)
+        \n 3. It supports a function that returns the size of the array.
+        \n 4. It allows the reading or printing of array through the use of cout and cin.\n</string>
+    <string name="op4"> Write a C++ program create a calculator for an arithmetic operator (+, -, *, /).  The program should take two operands from user and performs the operation on those two operands depending upon the operator entered by user. Use a switch statement to select the operation. Finally, display the result.  Some sample interaction with the program might look like this:
+        \n Enter first number, operator, second number: 10 / 3
+        \n Answer = 3.333333
+        \n Do another (y/n)?
+        \n y Enter first number, operator, second number: 12 + 100
+        \n Answer = 112 Do another (y/n)?\n</string>
+    <string name="op5"> Develop an object oriented program in C++ to create a database of student  information system containing the following information: Name, Roll number, Class, division, Date of Birth, Blood group, Contact address, telephone number, driving licence no. etc Construct the database with suitable member functions for initializing and destroying the data viz constructor, default constructor, Copy constructor, destructor, static member functions, friend class, this pointer, inline code and dynamic memory allocation operators-new and delete. </string>
+    <string name="op6"> Create a class template to represent a generic vector. Include following member functions:
+        \n To create the vector.
+        \n To modify the value of a given element
+        \n To multiply by a scalar value
+        \n To display the vector in the form (10,20,30,…)\n</string>
+    <string name="op7"> Write a function template selectionSort. Write a program that inputs, sorts and outputs an int array and a float array. \n</string>
+    <string name="op8"> Imagine a publishing company which does marketing for book and audiocassette versions. Create a class publication that stores the title (a string) and price (type float) of a publication. From this class derive two classes: book, which adds a page count (type int), and tape, which adds a playing time in minutes (type float).
+        \n Write a program that instantiates the book and tape classes, allows user to enter data and displays the data members. If an exception is caught, replace all the data member values with zero values.\n </string>
+    <string name="op9"> Write a function in C++ to count and display the number of lines not starting with alphabet \'A\' present in a text file "STORY.TXT".
+        \n Example: If the file \"STORY.TXT\" contains the following lines,
+        \n The roses are red.
+        \n A girl is playing there.
+        \n There is a playground.
+        \n An aeroplane is in the sky.
+        \n Numbers are not allowed in the password.
+        \n The function should display the output as 3.\n</string>
+    <string name="op10"> Write C++   Program with base class convert declares two variables, val1 and val2, which hold the initial and converted values, respectively. It also defines the functions getinit( ) and getconv( ), which return the initial value and the converted value. These elements of convert are fixed and applicable to all derived classes that will inherit convert. However, the function that will actually perform the conversion, compute( ), is a pure virtual function that must be defined by the classes derived from convert. The specific nature of compute( ) will be determined by what type of conversion is taking place. \n</string>
+    <string name="op11"> A book shop maintains the inventory of books that are being sold at the shop. The list includes details such as author, title, price, publisher and stock position. Whenever a customer wants a book, the sales person inputs the title and author and the system searches the list and displays whether it is available or not. If it is not, an appropriate message is displayed. If it is, then the system displays the book details and requests for the number of copies required. If the requested copies book details and requests for the number of copies required. If the requested copies are available, the total cost of the requested copies is displayed; otherwise the message ―Required copies not in stock‖ is displayed. Design a system using a class called books with suitable member functions and Constructors. Use new operator in constructors to allocate memory space required. Implement C++ program for the system.\n</string>
+    <string name="op12"> Create employee bio-data using following classes
+        \n i) Personal record
+        \n ii))Professional record
+        \n iii) Academic record Assume appropriate data members and member function to accept required data and print bio-data. Create bio-data using multiple inheritance using C++.\n</string>
+
+
+</resources>

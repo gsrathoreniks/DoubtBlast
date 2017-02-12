@@ -1,0 +1,79 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+class Quadratic
+{
+    public:
+        int root1,root2,evalu;
+        void setA(int A)
+        {
+            a=A;
+        }
+        void setB(int B)
+        {
+            b=B;
+        }
+        void setC(int C)
+        {
+            c=C;
+        }
+        void disp()
+        {
+            cout<<"\n "<<a<<"x^2 + " <<b<<"x + "<<c<<endl;
+        }
+        void eval(int a1,int b1,int c1,int x)
+        {
+            evalu=(a1*x*x)+(b1*x)+c1;
+            cout<<"\nEvaluation result --> "<<evalu<<endl;
+        }
+        void roots()
+        {
+            int sq;
+            sq=sqrt(b*b-4*a*c);
+            root1=(-b+sq)/(2*a);
+            root2=(-b-sq)/(2*a);
+            cout<<"\nRoot 1 --> "<<root1;
+            cout<<"\nRoot 2 --> "<<root2;
+        }
+        Quadratic operator+(const Quadratic &m)
+        {
+            Quadratic num;
+            num.a=this->a+m.a;
+            num.b=this->b+m.b;
+            num.c=this->c+m.c;
+            return num;
+        }
+    private:
+        int a;
+        int b;
+        int c;
+}
+int main()
+{
+    Quadratic pol1;
+    Quadratic pol2;
+    Quadratic pol3;
+
+    int a1,b1,c1;
+    int a2,b2,c2;
+    int x;
+    cout<<"\nEnter a,b,c for(ax^2 + bx + c)-->";
+    cin>>a1,b1,c1;
+    cout<<"\nEnter a,b,c for(ax^2 + bx + c)-->";
+    cin>>a2,b2,c2;
+    pol1.setA(a1);
+    pol1.setB(b1);
+    pol1.setC(c1);
+    pol1.setA(a2);
+    pol1.setB(b2);
+    pol1.setC(c2);
+    cout<<"\nEnter the value of x -->";
+    cin>x;
+    pol3.eval(a1,b1,c1,x);
+    pol3.eval(a2,b2,c2,x);
+
+    pol3=pol1+pol2;
+    pol3.disp();
+    pol3.roots();
+    return 0;
+}

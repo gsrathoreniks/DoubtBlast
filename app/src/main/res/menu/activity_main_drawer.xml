@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="all">
+        <item android:title="Computer Science (CS)">
+            <menu>
+                <item
+                    android:id="@+id/cmp_doubts"
+                    android:icon="@drawable/ic_create_black_24dp"
+                    android:title="Doubts" />
+                <item
+                    android:id="@+id/OOP"
+                    android:icon="@drawable/oop_vector"
+                    android:title="OOP" />
+                <item
+                    android:id="@+id/DSA"
+                    android:icon="@drawable/ic_laptop_mac_black_24dp"
+                    android:title="DSA" />
+            </menu>
+        </item>
+    </group>
+<!--
+    <item android:title="Information Technology (IT)">
+        <menu>
+            <item
+                android:id="@+id/it_doubts"
+                android:icon="@drawable/ic_create_black_24dp"
+                android:title="Doubts" />
+            <item
+                android:id="@+id/it_sub"
+                android:icon="@drawable/ic_import_contacts_black_24dp"
+                android:title="Subjects" />
+            <item
+                android:id="@+id/it_pl"
+                android:icon="@drawable/ic_laptop_mac_black_24dp"
+                android:title="Practicals" />
+        </menu>
+
+    </item>  -->
+</menu>

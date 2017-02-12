@@ -1,0 +1,51 @@
+#include<iostream>
+using namespace std;
+class Calculator
+{
+	private:
+		float num1,num2,result;
+		char op;
+	public:
+		void get()
+		{
+			cout<<"Enter first number , operator , second number--->";
+			cin>>num1>>op>>num2;
+		};
+		void calculate()
+		{
+			switch(op)
+			{
+				case '+':
+						result=num1+num2;
+					break;
+				case '-':
+					result=num1-num2;
+					break;
+				case '*':
+					result=num1*num2;
+					break;
+				case '/':
+					if(num2==0)
+					{
+						cout<<"Number is invalid....!!!";
+						return;
+					}
+					result=num1/num2;
+					break;
+			}
+			cout<<endl<<num1<<" "<<op<<" "<<num2<<" = "<<result;
+		}
+};
+int main()
+{
+	Calculator obj;
+	NIKS:
+	obj.get();
+	obj.calculate();
+	char ch;
+	cout<<endl<<"Do you want to perform more calculation (Y or N)  -->";
+	cin>>ch;
+	if(ch=='y'||ch=='Y')
+		goto NIKS;
+	return 0;
+}
